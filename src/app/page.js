@@ -1,92 +1,74 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import Link from 'next/link';
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+      
 
       <div className={styles.center}>
+          
         <Image
           className={styles.logo}
-          src="/next.svg"
+          src="/gcorn_color.png"
           alt="Next.js Logo"
           width={180}
-          height={37}
+          height={180}
           priority
         />
+          <h1>Gcorn Industries</h1>
       </div>
 
       <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+        <Link
+          href="/city17"
           className={styles.card}
-          target="_blank"
+          
+          rel="noopener noreferrer"
+        >
+            
+          <h2>
+            City 17 <span>-&gt;</span>
+          </h2>
+          <p>Welcome to City 17, </p>
+        </Link>
+
+        <a
+          href="/about"
+          className={styles.card}
+          
           rel="noopener noreferrer"
         >
           <h2>
-            Docs <span>-&gt;</span>
+            Who we are<span>-&gt;</span>
           </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
+          <p>Learn about our history</p>
         </a>
 
         <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="/takeover"
           className={styles.card}
-          target="_blank"
+          
           rel="noopener noreferrer"
         >
           <h2>
-            Learn <span>-&gt;</span>
+            The Takeover <span>-&gt;</span>
           </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
+          <p>How did we get here.</p>
         </a>
 
         <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="/contact"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
+            Contact <span>-&gt;</span>
           </h2>
           <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            Contact the Gcorn Government.
           </p>
         </a>
       </div>
